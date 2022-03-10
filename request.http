@@ -1,0 +1,13 @@
+# POST http://localhost:3000/body_params
+# content-type: application/json
+
+# {
+#     "secret_info": "yooo"
+# }
+POST http://localhost:3000/credentails
+content-type: application/json
+
+{
+    "number": "yooo"
+}
+
