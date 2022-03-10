@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get "/query_path" => "params#name"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/more_path/:sub_one/:sub_two" => "params#pathing"
+
+  get "/guess_number/:number" => "params#guess_number"
 end
