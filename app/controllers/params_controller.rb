@@ -2,7 +2,10 @@ class ParamsController < ApplicationController
   def name
     input = params[:name]
     output = "your name is #{input}"
-    render json: { message: output }
+    if input.starts_with?("a")
+      output = "Hey! Your name starts with A!" #http://localhost:3000/name_path?name=alex
+    end
+    render json: { message: output } #http://localhost:3000/name_path?name=jason
   end
 
   def pathing
