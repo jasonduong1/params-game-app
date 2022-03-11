@@ -1,13 +1,29 @@
-# POST http://localhost:3000/body_params
-# content-type: application/json
-
-# {
-#     "secret_info": "yooo"
-# }
-POST http://localhost:3000/credentails
+POST http://localhost:3000/body_params
 content-type: application/json
 
 {
-    "number": "yooo"
+    "secret_info": "yooo"
 }
+###
+POST http://localhost:3000/guess_number
+content-type: application/json
 
+{
+    "number": "36"
+}
+###
+POST http://localhost:3000/credentials
+content-type: application/json
+
+{
+    "user": "hugh",
+    "pw": "swordfish"
+}
+###
+POST http://localhost:3000/credentials
+content-type: application/json
+
+{
+    "user": "hugh",
+    "pw": "nofish"
+}

@@ -16,8 +16,8 @@ class ParamsController < ApplicationController
   end
 
   def guess_number
-    winning_number = 32
-    input_guess = params["users_guess"].to_i
+    winning_number = 36
+    input_guess = params[:number].to_i
     if input_guess > winning_number
       output_message = "Guess lower!"
     elsif input_guess < winning_number
@@ -39,7 +39,8 @@ class ParamsController < ApplicationController
     pw_input = params[:pw]
     if user_input == "hugh" && pw_input == "swordfish"
       render json: { message: "valid credentials" }
+    else
+      render json: { message: "invalid credentials" }
     end
-    render json: { message: "invalid credentials" }
   end
 end

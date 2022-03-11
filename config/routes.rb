@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get "/guess_number" => "params#guess_number"
 
-  # post "/guess_number" => "params#guess_number"
+  post "/guess_number" => "params#guess_number"
 
   post "/body_params" => "params#secret"
 
